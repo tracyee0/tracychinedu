@@ -17,25 +17,33 @@
 <button onclick='showMe("today is saturday","welcome to projaro")'> show me </button>
 <button onclick= 'biggerNumber(8,5)'> show me! </button>
 <h1 id="the_answer"> The answer should be here. </h1>
+
+
 <form>
     Use Email: <input type="radio" name="signupstyle" value="use_email" onclick="showField('email')">
     Use Phone: <input type="radio" name="signupstyle" value="use_phone" onclick="showField('phone')">
+
+
     <div id="email_div">
     <label> Email </label>
     <input type="email" placeholder="enter email" name="myEmail" id="myEmail">
-    <br>
+    <br><br>
     </div>
+
+
     <div id="phone_div">
         <label> phone number </label>
         <input type="tel" placeholder="enter phone no" name="myPhone" id="myPhone">
+        <br><br>
     </div>
+
     <div id="password_div">
     <label> Password </label>
     <input type="password" placeholder="enter password" name="password" id="myPassword">
     <br>
     </div>
 
-    <button onclick="SignIn()"> submit </button>
+    <button type="submit" onclick="SignIn()"> submit </button>
 
     <script src="signup.js"> </script>
     </body>
